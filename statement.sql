@@ -53,12 +53,12 @@ INSERT INTO album VALUES
     (NULL, 'Rumba Azul', "Caetona Velso", 'Latin', 4.90, 50),
     (NULL, 'Survivor', "Destiny's child", 'R&B', 3.00, 789),
     (NULL, 'Oh Girl', "The Chi-lites", 'Pop', 3.00, 2),
-    (NULL, 'Der Herr ist mein getre', "Ton Koopman", 'Klassiek', 5.50, 30),
+    (NULL, 'Der Herr ist mein genre', "Ton Koopman", 'Klassiek', 5.50, 30),
     (NULL, 'Closing Time', "Tom Waits", 'Rock', 3.00, 0),
     (NULL, 'Irresistible', "Celia Cruz", 'Latin', 3.50, 23),
     (NULL, 'Marvin Gaye II', "Marvin Gaye", 'R&B', 4.00, 154),
     (NULL, 'Mi Sangre', "Juanes", 'Latin', 3.90, 123),
-    (NULL, 'Greatest Hits 2', "Qeen", 'Rock', 3.00, 0),
+    (NULL, 'Greatest Hits 2', "Queen", 'Rock', 3.00, 0),
     (NULL, '3121', "Prince", 'Rock', 3.45, 0),
     (NULL, 'Antologia I', "Paco de Lucia", 'World', 3.00, 320)
 ;
