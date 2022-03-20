@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 20 mrt 2022 om 20:07
+-- Gegenereerd op: 20 mrt 2022 om 20:25
 -- Serverversie: 10.4.22-MariaDB
 -- PHP-versie: 8.1.2
 
@@ -33,26 +33,27 @@ CREATE TABLE `album` (
   `artiest` varchar(255) NOT NULL,
   `genre` varchar(255) NOT NULL,
   `prijs` decimal(2,1) DEFAULT NULL,
-  `voorraad` int(11) NOT NULL
+  `voorraad` int(11) NOT NULL,
+  `cover` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `album`
 --
 
-INSERT INTO `album` (`ID`, `titel`, `artiest`, `genre`, `prijs`, `voorraad`) VALUES
-(1, 'Cafe Atlantico', 'Cesarie Evora', 'World', '3.0', 100),
-(2, 'Rumba Azul', 'Caetona Velso', 'Latin', '4.9', 50),
-(3, 'Survivor', 'Destiny\'s child', 'R&B', '3.0', 789),
-(4, 'Oh Girl', 'The Chi-lites', 'Pop', '3.0', 2),
-(5, 'Der Herr ist mein getre', 'Ton Koopman', 'Klassiek', '5.5', 30),
-(6, 'Closing Time', 'Tom Waits', 'Rock', '3.0', 0),
-(7, 'Irresistible', 'Celia Cruz', 'Latin', '3.5', 23),
-(8, 'Marvin Gaye II', 'Marvin Gaye', 'R&B', '4.0', 154),
-(9, 'Mi Sangre', 'Juanes', 'Latin', '3.9', 123),
-(10, 'Greatest Hits 2', 'Qeen', 'Rock', '3.0', 0),
-(11, '3121', 'Prince', 'Rock', '3.5', 0),
-(12, 'Antologia I', 'Paco de Lucia', 'World', '3.0', 320);
+INSERT INTO `album` (`ID`, `titel`, `artiest`, `genre`, `prijs`, `voorraad`, `cover`) VALUES
+(1, 'Cafe Atlantico', 'Cesarie Evora', 'World', '3.0', 100, ''),
+(2, 'Rumba Azul', 'Caetona Velso', 'Latin', '4.9', 50, ''),
+(3, 'Survivor', 'Destiny\'s child', 'R&B', '3.0', 789, ''),
+(4, 'Oh Girl', 'The Chi-lites', 'Pop', '3.0', 2, ''),
+(5, 'Der Herr ist mein getre', 'Ton Koopman', 'Klassiek', '5.5', 30, ''),
+(6, 'Closing Time', 'Tom Waits', 'Rock', '3.0', 0, ''),
+(7, 'Irresistible', 'Celia Cruz', 'Latin', '3.5', 23, ''),
+(8, 'Marvin Gaye II', 'Marvin Gaye', 'R&B', '4.0', 154, ''),
+(9, 'Mi Sangre', 'Juanes', 'Latin', '3.9', 123, ''),
+(10, 'Greatest Hits 2', 'Qeen', 'Rock', '3.0', 0, ''),
+(11, '3121', 'Prince', 'Rock', '3.5', 0, ''),
+(12, 'Antologia I', 'Paco de Lucia', 'World', '3.0', 320, '');
 
 -- --------------------------------------------------------
 
