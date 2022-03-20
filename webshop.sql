@@ -46,12 +46,12 @@ INSERT INTO `album` (`ID`, `titel`, `artiest`, `genre`, `prijs`, `voorraad`, `co
 (2, 'Rumba Azul', 'Caetona Velso', 'Latin', '4.9', 50, ''),
 (3, 'Survivor', 'Destiny\'s child', 'R&B', '3.0', 789, ''),
 (4, 'Oh Girl', 'The Chi-lites', 'Pop', '3.0', 2, ''),
-(5, 'Der Herr ist mein getre', 'Ton Koopman', 'Klassiek', '5.5', 30, ''),
+(5, 'Der Herr ist mein genre', 'Ton Koopman', 'Klassiek', '5.5', 30, ''),
 (6, 'Closing Time', 'Tom Waits', 'Rock', '3.0', 0, ''),
 (7, 'Irresistible', 'Celia Cruz', 'Latin', '3.5', 23, ''),
 (8, 'Marvin Gaye II', 'Marvin Gaye', 'R&B', '4.0', 154, ''),
 (9, 'Mi Sangre', 'Juanes', 'Latin', '3.9', 123, ''),
-(10, 'Greatest Hits 2', 'Qeen', 'Rock', '3.0', 0, ''),
+(10, 'Greatest Hits 2', 'Queen', 'Rock', '3.0', 0, ''),
 (11, '3121', 'Prince', 'Rock', '3.5', 0, ''),
 (12, 'Antologia I', 'Paco de Lucia', 'World', '3.0', 320, '');
 
