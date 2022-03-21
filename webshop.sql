@@ -11,6 +11,10 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
 
+CREATE DATABASE webshop;
+
+USE webshop;
+
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -42,18 +46,18 @@ CREATE TABLE `album` (
 --
 
 INSERT INTO `album` (`ID`, `titel`, `artiest`, `genre`, `prijs`, `voorraad`, `cover`) VALUES
-(1, 'Cafe Atlantico', 'Cesarie Evora', 'World', '3.0', 100, ''),
-(2, 'Rumba Azul', 'Caetona Velso', 'Latin', '4.9', 50, ''),
-(3, 'Survivor', 'Destiny\'s child', 'R&B', '3.0', 789, ''),
-(4, 'Oh Girl', 'The Chi-lites', 'Pop', '3.0', 2, ''),
-(5, 'Der Herr ist mein genre', 'Ton Koopman', 'Klassiek', '5.5', 30, ''),
-(6, 'Closing Time', 'Tom Waits', 'Rock', '3.0', 0, ''),
-(7, 'Irresistible', 'Celia Cruz', 'Latin', '3.5', 23, ''),
-(8, 'Marvin Gaye II', 'Marvin Gaye', 'R&B', '4.0', 154, ''),
-(9, 'Mi Sangre', 'Juanes', 'Latin', '3.9', 123, ''),
-(10, 'Greatest Hits 2', 'Queen', 'Rock', '3.0', 0, ''),
-(11, '3121', 'Prince', 'Rock', '3.5', 0, ''),
-(12, 'Antologia I', 'Paco de Lucia', 'World', '3.0', 320, '');
+(1, 'Cafe Atlantico', 'Cesarie Evora', 'World', '3.0', 100, 'Cafe_ Atlantico.jpg'),
+(2, 'Rumba Azul', 'Caetona Velso', 'Latin', '4.9', 50, 'Rumba_Azul.jpg'),
+(3, 'Survivor', 'Destiny\'s child', 'R&B', '3.0', 789, 'Survivor.jpg'),
+(4, 'Oh Girl', 'The Chi-lites', 'Pop', '3.0', 2, 'Oh_Girl.jpg'),
+(5, 'Der Herr ist mein genre', 'Ton Koopman', 'Klassiek', '5.5', 30, 'Der_Herr_ist_mein_genre.jpg'),
+(6, 'Closing Time', 'Tom Waits', 'Rock', '3.0', 0, 'Closing_Time.jpg'),
+(7, 'Irresistible', 'Celia Cruz', 'Latin', '3.5', 23, 'Irresistible.jpg'),
+(8, 'Marvin Gaye II', 'Marvin Gaye', 'R&B', '4.0', 154, 'Marvin_Gaye_II.jpeg'),
+(9, 'Mi Sangre', 'Juanes', 'Latin', '3.9', 123, 'Mi Sangre.jpg'),
+(10, 'Greatest Hits 2', 'Queen', 'Rock', '3.0', 0, 'Greatest_Hits_2.jpg'),
+(11, '3121', 'Prince', 'Rock', '3.5', 0, '3121.jpg'),
+(12, 'Antologia I', 'Paco de Lucia', 'World', '3.0', 320, 'Antologia_I.jpg');
 
 -- --------------------------------------------------------
 
