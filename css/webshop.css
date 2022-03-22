@@ -24,7 +24,7 @@ body {
     color: yellow;
     font-size: 3.0rem;
 }
-.icon :hover{
+.icon:hover{
     opacity: 0.9;
     filter: alpha(opacity=9);
     color: darkgreen;
@@ -48,7 +48,7 @@ li{
     font-size: 1.4rem;
     box-shadow: 0px 0px 4px rgba(0,0, 0, 0.5);
 }
-li :hover{
+li:hover{
     background: #C2F98E;
     opacity: 0.8;
     filter: alpha(opacity=8);
@@ -92,14 +92,50 @@ input{
     text-align: center;
     font-size: 1.0rem;
 }
-input :hover{
+input:hover{
     background: #D8F9B6;
 }
 
-form> .aantal{
+/* 
+form > .Aantal will not work
+element element	| div p	    |   Selects all <p> elements inside <div> elements
+element>element	| div > p   |   Selects all <p> elements where the parent is a <div> element
+*/
+form .aantal{ 
     width: 30px;
     height: 20px;
     margin-left: auto;
     margin-right: auto;
     border: solid 1px gray;
+}
+
+#winkelmandje_knop{
+    display: none;
+}
+
+#winkelmandje_knop + label{
+    font-size: 3.5rem;
+}
+
+#winkelmandje{
+    text-align: center;
+    z-index: 3;
+    position: fixed;
+    bottom: 40%;
+    right: 0;
+    left: 0;
+    height: 20%;
+    visibility: hidden;
+    width: 100%;
+    background-color: #C2F98E;
+    border-radius: 5%;
+    opacity: 0.9;
+    filter: alpha(opacity=9);
+}
+
+#rijen{
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
