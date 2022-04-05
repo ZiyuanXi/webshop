@@ -18,7 +18,11 @@ if (isset($_POST['submit'])) { //copy from regisreren.php
     $query = "UPDATE klant SET voornaam = ?, achternaam = ?, straat = ?, postcode = ?, woonplaats = ?, email = ? WHERE ID = ?";
     $stmt = $verbinding->prepare($query);
     try {
-        $stmt = $stmt->execute(array(
+        /*
+        !!!!CHECKING STATEMENT!!!!!
+        print_r($_POST);
+        die();*/
+        $stmt = $stmt->execute([
             $voornaam, 
             $achternaam,
             $straat,
@@ -26,8 +30,9 @@ if (isset($_POST['submit'])) { //copy from regisreren.php
             $woonplaats,
             $email,
             $id
-            ));
+        ]);
         if ($stmt) {
+            echo $query;
             echo "<script>alert('Profiel is geupdate');
                     location.href='index.php?page=webshop';</script>";
         }else{

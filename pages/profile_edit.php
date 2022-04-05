@@ -20,7 +20,7 @@ try{
     <p id="page_titel">Profiel editen</p>
     <br>
     <label for="idUser">Gebruiker ID: </label>
-    <input type="text" disabled="disabled" required name="id" value="<?php echo $resultaat['ID'];?>"/>
+    <input type="hidden" required name="id" value="<?php echo $resultaat['ID'];?>"><!-- Hidden value id-->
     <label for="voornaam">Voornaam</label>
     <input type="text" required name="voornaam" value="<?php echo $resultaat['voornaam'];?>"/>
     <label for="achternaam">Achternaam</label>

@@ -55,4 +55,17 @@ try {
     echo $e->getMessage();
     echo "Kon geen verbinding maken";
 }
+
+//https://phpdelusions.net/pdo/pdo_wrapper
+function pdo($pdo, $sql, $args = NULL)
+{
+    if (!$args)
+    {
+         return $pdo->query($sql);
+    }
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute($args);
+    return $stmt;
+}
+
 ?>
