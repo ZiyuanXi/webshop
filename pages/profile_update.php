@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) { //copy from regisreren.php
     $postcode = htmlspecialchars($_POST['postcode']);
     $woonplaats = htmlspecialchars($_POST['woonplaats']);
     $email = htmlspecialchars($_POST['e-mail']);
-    $query = "UPDATE klant SET 'voornaam' = ?, 'achternaam' = ?, 'straat' = ?, 'postcode' = ?, 'woonplaats' = ?, 'email' = ? WHERE 'email' = ?";
+    $query = "UPDATE klant SET voornaam = ?, achternaam = ?, straat = ?, postcode = ?, woonplaats = ?, email = ? WHERE ID = ?";
     $stmt = $verbinding->prepare($query);
     try {
         $stmt = $stmt->execute(array(
