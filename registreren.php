@@ -44,6 +44,7 @@ if (isset($_POST["submit"])){
         }
         
     }
+    //alert voor melding
     echo "<div id='melding'><script type='text/javascript'>alert('$melding');</script></div>";
 }
 ?>

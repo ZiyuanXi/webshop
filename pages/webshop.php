@@ -30,7 +30,7 @@ if (isset($_POST["zoeken"])&& !empty($_POST["patroon"])) {
     $patroon = htmlspecialchars($_POST["patroon"]);
     $sql = "SELECT * FROM album WHERE titel LIKE '%$patroon%' || artiest LIKE '%$patroon%' || genre LIKE '%$patroon%'";
 }else{
-    $sql = "SELECT * FROM album LIMIT 3";
+    $sql = "SELECT * FROM album LIMIT 6";
 }
 ?>
 

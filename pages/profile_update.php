@@ -6,7 +6,9 @@ if (!isset($_SESSION["ID"])&&$_SESSION["STATUS"] !="ACTIEF") {
     location.href='../index.php';
     </scirpt>";
 }
+
 if (isset($_POST['submit'])) { //copy from regisreren.php
+    $id = htmlspecialchars($_POST['id']);
     $voornaam = htmlspecialchars($_POST['voornaam']);
     $achternaam = htmlspecialchars($_POST['achternaam']);
     $straat = htmlspecialchars($_POST['straat']);
@@ -23,7 +25,7 @@ if (isset($_POST['submit'])) { //copy from regisreren.php
             $postcode,
             $woonplaats,
             $email,
-            $email
+            $id
             ));
         if ($stmt) {
             echo "<script>alert('Profiel is geupdate');

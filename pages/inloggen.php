@@ -45,6 +45,6 @@ if (isset($_POST["submit"])) {
     } catch (PDOException $e) {
         echo $e ->getMessage();
     }
-    echo "<div id='melding'> $melding</div>";
+    echo "<div id='melding'><script type='text/javascript'>alert('$melding');</script></div>";
 }
 ?>
