@@ -1,12 +1,13 @@
-body {
+ body {
     font-family: "Roboto 2", "Helvetica Neue";
     margin: 0;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 }
 .header{
     padding-top: 1%;
-    box-shadow: 0px 4px 10px rgba(0,0, 0, 0.5);
+    border: none;
+    /*box-shadow: 0px 1px 5px rgba(0,0, 0, 0.5);*/
 }
 .icon_container{
     text-align: center;
@@ -40,14 +41,14 @@ ul{
     width: 100%;
     padding: 0; margin: 0; width: 100%;
 }
-li{
+/*li{
     padding: 0; margin: 0;
+    border: none;
     list-style-type: none;
     width: 33%;
     float: left;
     font-size: 1.4rem;
-    box-shadow: 0px 0px 4px rgba(0,0, 0, 0.5);
-}
+}*/
 li:hover{
     background: #C2F98E;
     opacity: 0.8;
@@ -138,4 +139,4 @@ form .aantal{
     padding: 0;
     margin: 0;
     width: 100%;
-}
+} 
